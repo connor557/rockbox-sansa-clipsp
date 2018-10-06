@@ -1536,7 +1536,7 @@ cat <<EOF
  233) DX90                                       228) NWZ-A860 series
                                                  229) NWZ-S750 series
  ==xDuoo==
- 241) X3
+ 241) X3                                         242) Sansa Clip Sport
 EOF
 
   buildfor=`input`;
@@ -2945,6 +2945,25 @@ fi
     t_manufacturer="as3525"
     t_model="sansa-clipzip"
     arm926ejscc
+    ;;
+   
+   242|sansaclipsp)
+    target_id=241
+    modelname="sansaclipsp"
+    target="SANSA_CLIPSPORT"
+    memory=8 # not sure
+    bmp2rb_mono="$rootdir/tools/bmp2rb -f 0"
+    bmp2rb_native="$rootdir/tools/bmp2rb -f 4"
+    tool="$rootdir/tools/scramble -add=clzp"
+    output="rockbox.sansa"
+    bootoutput="bootloader-clipzip.sansa"
+    appextra="recorder:gui:radio"
+    plugins="yes"
+    swcodec="yes"
+    toolset=$scramblebitmaptools
+    t_cpu="mips"
+    t_manufacturer="atj212x"
+    t_model="sansa-clipsp"
     ;;
 
    66|sansaconnect)
