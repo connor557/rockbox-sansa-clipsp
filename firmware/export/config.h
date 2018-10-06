@@ -85,6 +85,7 @@
 #define JZ4760B     47602
 #define AS3525       3525
 #define AT91SAM9260  9260
+#define ATJ2127      2127
 #define AS3525v2    35252
 #define IMX233        233
 #define RK27XX       2700
@@ -264,6 +265,7 @@
 #define LCD_FUZEPLUS  41
 #define LCD_SPFD5420A 42 /* rk27xx */
 #define LCD_CLIPZIP   43 /* as used by the Sandisk Sansa Clip Zip */
+#define LCD_CLIPSP    66
 #define LCD_HX8340B   44 /* as used by the HiFiMAN HM-601/HM-602/HM-801 */
 #define LCD_CONNECT   45 /* as used by the Sandisk Sansa Connect */
 #define LCD_GIGABEATS 46
@@ -613,6 +615,8 @@ Lyre prototype 1 */
 #include "config/agptekrocker.h"
 #elif defined(XDUOO_X3)
 #include "config/xduoox3.h"
+#elseif
+#include "config/sansaclipsp.h"
 #else
 /* no known platform */
 #endif

@@ -229,3 +229,6 @@
 
 /* Define this if a programmable hotkey is mapped */
 //#define HAVE_HOTKEY
+
+// Define this for MIPS ports
+#define ARCH_VERSION 32
