@@ -21,7 +21,7 @@
 #include "target.h"
 #include "system.h"
 #include "logf.h"
-#include "atj213x.h"
+#include "atj21xx.h"
 
 #define CORE_FREQ 7500000
 #define HZ  1000000

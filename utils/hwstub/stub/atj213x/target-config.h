@@ -1,4 +1,4 @@
-#define CONFIG_ATJ213X
+#define CONFIG_ATJ21XX
 #define IRAM_ORIG       0x94040000 /* KSEG1 cached unmapped */
 #define IRAM_SIZE       0x18000
 #define DRAM_ORIG       0x80000000 /* KSEG1 cached unmapped */
